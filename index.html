@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <nav class="navbar bg-1 fg-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">To-Do-List</a>    
+        </div>
+    </nav>
+    <section class="Task-manager">
+                <h1>Task Manager</h1>
+                <p>Organize your tasks and stay productive.</p>
+    </section> 
+    <section class="task-add">
+        <div class="input-group mb-3">
+            <input type="text"
+               id="taskInput"
+               class="form-control"
+               placeholder="Enter a new task...">
+
+            <button class="btn-outline theme-secondary input-group-btn"
+                type="button"
+                id="addBtn">Add Task</button>
+        </div>
+    </section>
+    <section class="your-tasks">
+        <div class="text">
+            <p>Your Tasks</p>
+        </div>
+        <div class="button">
+            <button type="button" class="btn" id="remaining">0 remaining</button>
+        </div> 
+    </section>
+    <br>
+ 
+    
+    <section class="search-button">
+        <div class="btn-group" role="group">
+
+            <button type="button"
+                class="filter active"
+                data-filter="all">All</button>
+
+            <button type="button"
+                class="filter"
+                data-filter="active">Active</button>
+
+            <button type="button"
+                class="filter"
+                data-filter="completed">Completed</button>
+
+        </div>
+    </section>
+
+    <br>
+    
+    
+    <section class="task-list">
+        <div class="list-group" id="taskList"></div>
+            <p class="empty-message" id="emptyMessage">No tasks yet. Add your first task</p>
+        </div>
+
+         <div class="clear-section">
+            <button class="clear-btn" id="clearBtn">Clear Completed</button>
+        </div>
+
+    </section>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
